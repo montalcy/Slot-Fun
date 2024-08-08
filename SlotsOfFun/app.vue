@@ -1,22 +1,22 @@
 <template>
   <NuxtLayout>
     <NuxtPage>
-      <div>
-        <h1 class="font" style="text-align: center;">Welcome to Slots of Fun</h1>
-        <div class="text-center pa-16">
-          
+      <div class="page-container">
+        <h1 class="font">🎰 Welcome to Slots of Fun 🎰</h1>
+        <br /><br />
+        <div class="button-container">
           <v-btn
-          rounded
-          variant="elevated"
+          style="
+              font-weight: bold;
+              color: yellow;
+              background-color: orangered;"
+            rounded
+            variant="elevated"
             size="x-large"
             @click="dialog = true"
-            style="
-              font-weight: bold;
-              color: greenyellow;
-              background-color: orangered;
-            "
+            class="btn-style"
           >
-            <v-icon>mdi-play-circle-outline</v-icon>Let's Play
+            <v-icon>mdi-play</v-icon> Let's Play
           </v-btn>
         </div>
       </div>
@@ -28,13 +28,27 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
 .font {
-  font-family: "Nabla";
+  font-family: "Nabla", sans-serif;
+}
+
+.button-container {
+  margin-top: 16px; /* Adjust spacing if needed */
 }
 
 .btn-style {
   font-weight: bold;
-  color: yellowgreen;
+  color: greenyellow;
   background-color: orangered;
 }
 </style>
