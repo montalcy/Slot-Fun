@@ -1,2 +1,2 @@
 # Slot-Fun
-Slot machine simulation app
+Slot machine simulation website
