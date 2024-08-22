@@ -17,13 +17,14 @@
       </div>
     </main>
   </template>
+
   
   <script lang="ts" setup>
-  
   import { ref } from 'vue';
   import { useRouter } from 'vue-router';
   import { getRandomFruit, checkRandomFruit, fruits } from '~/scripts/spinRandom';
   import { resultValue } from './sharedState';
+
   const fontStyle = {
     fontFamily: "'RetroSigned', sans-serif"
   };
@@ -33,16 +34,16 @@
   const randomFruit3 = ref('');
   
   function spin() {
-      randomFruit.value = "🍊";
-      randomFruit2.value = "🍊";
-      randomFruit3.value = "🍊";
+      randomFruit.value = getRandomFruit();
+      randomFruit2.value = getRandomFruit();
+      randomFruit3.value = getRandomFruit();
       if (!checkRandomFruit(randomFruit.value, randomFruit2.value, randomFruit3.value)) {
         console.log('try again!');
-        resultValue.value == false;
+        resultValue.value = false;
       }
       if (checkRandomFruit(randomFruit.value, randomFruit2.value, randomFruit3.value)) {
         console.log('you won!');
-        resultValue.value == true;
+        resultValue.value = true;
       }   
   }
 
