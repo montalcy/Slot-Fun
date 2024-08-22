@@ -25,10 +25,10 @@ jobs:
           node-version: 18
       - name: Install Packages
         run: npm ci
-        working-directory: ./Slot-Fun/SlotsOfFun
+        working-directory: ./SlotsOfFun
       - name: Generate
         run: npm run generate
-        working-directory: ./Slot-Fun/SlotsOfFun
+        working-directory: ./SlotsOfFun
       
       - name: Build And Deploy
         id: builddeploy
