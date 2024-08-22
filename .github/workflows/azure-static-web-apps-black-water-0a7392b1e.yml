@@ -23,11 +23,11 @@ jobs:
         with:
           node-version: 18
       - name: Install Packages
-        run: npm i
-        working-directory: ./portfolio-website/portfolio-website
+        run: npm ci
+        working-directory: ./Slot-Fun/SlotsOfFun
       - name: Generate
         run: npm run generate
-        working-directory: ./portfolio-website/portfolio-website
+        working-directory: ./Slot-Fun/SlotsOfFun
       
       - name: Build And Deploy
         id: builddeploy
