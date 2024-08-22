@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 18
       - name: Install Packages
-        run: npm ci
+        run: npm i
         working-directory: ./portfolio-website/portfolio-website
       - name: Generate
         run: npm run generate
