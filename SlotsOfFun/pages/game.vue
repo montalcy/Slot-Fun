@@ -36,7 +36,7 @@
   import { ref, watch } from 'vue';
   import { useRouter } from 'vue-router';
   import { getRandomFruit, checkRandomFruit, fruits } from '~/scripts/spinRandom';
-  import { resultValue } from './sharedState';
+  import { resultValue } from '../scripts/sharedState';
 
   const fontStyle = {
     fontFamily: "'RetroSigned', sans-serif"
