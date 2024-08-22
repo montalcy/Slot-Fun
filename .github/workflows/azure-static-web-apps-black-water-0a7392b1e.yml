@@ -17,7 +17,8 @@ jobs:
         with:
           submodules: true
           lfs: false
-
+      - name: List Directory Contents
+        run: ls -R ./Slot-Fun
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.3
         with:
