@@ -16,6 +16,7 @@
         </v-btn>
       </div>
 
+      
 <!-- THIS IS FOR THE POP UP -->
    <div v-if="showModal" class="modal-overlay">
     <div class="modal" style="background-color: white;">
@@ -81,6 +82,10 @@ watch(resultValue, (newResult) => {
   showResultMessage(newResult);
 }, { immediate: true });
 
+
+  function toggleLightDark(){
+    
+  }
   </script>
   
   <style>
